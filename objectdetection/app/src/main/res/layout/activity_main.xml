@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visionary scan"
+        android:textColor="#11209F"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_marginTop="32dp"
+        android:shadowColor="#87AED8"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="9"
+        android:textStyle="bold"
+       />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="#efefef"
+    android:gravity="center">
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/button"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/newobjectdetection"
+        android:onClick="onGotoImageActivity"
+
+    />
+
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/button2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/newflower"
+        style="@style/Widget.Neumorph.Button"
+        android:onClick="onGotoFlowerActivity"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Object detection"
+            android:layout_marginRight="6dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flower detection"
+            android:layout_marginLeft="62.55dp"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="#efefef"
+    android:gravity="center">
+
+    <soup.neumorphism.NeumorphImageButton
+
+        android:id="@+id/button3"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/newimagedetection"
+        style="@style/Widget.Neumorph.Button"
+        android:onClick="onGotoObjectDetection"
+
+        />
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/button4"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/newfacedete"
+        style="@style/Widget.Neumorph.Button"
+        android:onClick="onGotoFaceDetection"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image detection"
+            android:layout_marginRight="6dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Face detection"
+            android:layout_marginLeft="62.55dp"/>
+    </LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#efefef"
+        android:gravity="center">
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/button5"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/newimageconverter"
+        style="@style/Widget.Neumorph.Button"
+        android:onClick="onGotoAudioClassification"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image converter"/>
+
+    </LinearLayout>
+</LinearLayout>
